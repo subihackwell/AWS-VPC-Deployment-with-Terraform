@@ -59,13 +59,9 @@ Install Terraform
 Configure AWS CLI
 aws configure
 
-Initialize Terraform
+Navigate to the project folder and run the following commands:
 terraform init   # Initialize the Terraform project
-
-Plan Terraform Deployment
 terraform plan   # Review the planned resources
-
-Apply Terraform Deployment
 terraform apply  # Apply the infrastructure
 
 Access the EC2 Instance
