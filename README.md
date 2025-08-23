@@ -56,8 +56,7 @@ These outputs make it easy to reference and manage deployed resources.
 Install Terraform
 [Terraform Download](https://developer.hashicorp.com/terraform/downloads)
 
-Configure AWS CLI with your credentials:
-
+Configure AWS CLI
 aws configure
 
 
