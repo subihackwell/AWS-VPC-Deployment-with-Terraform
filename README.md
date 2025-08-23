@@ -52,20 +52,24 @@ These outputs make it easy to reference and manage deployed resources.
 
 ## Getting Started
 
-1. Install [Terraform](https://developer.hashicorp.com/terraform/downloads).  
-2. Configure AWS CLI with your credentials.  
-3. Navigate to the project folder and run:
+Install Terraform
+Terraform Download
 
-```bash
-terraform init
-terraform plan
-terraform apply
-Use the EC2 public IP output to access the instance.
+Configure AWS CLI with your credentials:
+
+aws configure
+
+
+Navigate to the project folder and run the following commands:
+
+terraform init   # Initialize the Terraform project
+terraform plan   # Review the planned resources
+terraform apply  # Apply the infrastructure
+
+
+Access the EC2 instance using the ec2_public_ip output from Terraform.
 
 Project Structure
-perl
-Copy
-Edit
 my-vpc-project/
 ├── main.tf          # Root module calling submodules
 ├── variables.tf     # Input variables
@@ -78,6 +82,7 @@ my-vpc-project/
 │   └── ec2/         # EC2 instance resources
 
 Skills Demonstrated
+
 AWS VPC design and networking basics
 
 Subnet planning and routing
@@ -86,6 +91,6 @@ Security group configuration
 
 EC2 provisioning
 
-Infrastructure as Code with Terraform
+Infrastructure as Code (IaC) using Terraform
 
 Modular Terraform project organization
