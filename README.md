@@ -56,7 +56,8 @@ These outputs make it easy to reference and manage deployed resources.
 Install Terraform
 [Terraform Download](https://developer.hashicorp.com/terraform/downloads)
 
-Configure AWS CLI
+### Configure AWS CLI
+```bash
 aws configure
 
 
