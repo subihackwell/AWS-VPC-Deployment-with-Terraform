@@ -69,7 +69,6 @@ terraform apply  # Apply the infrastructure
 
 Access the EC2 instance using the ec2_public_ip output from Terraform.
 
-Project Structure
 my-vpc-project/
 ├── main.tf          # Root module calling submodules
 ├── variables.tf     # Input variables
@@ -80,6 +79,7 @@ my-vpc-project/
 │   ├── vpc/         # VPC resources
 │   ├── subnet/      # Subnet resources
 │   └── ec2/         # EC2 instance resources
+
 
 Skills Demonstrated
 
