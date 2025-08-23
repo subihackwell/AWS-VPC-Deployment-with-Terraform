@@ -76,6 +76,7 @@ my-vpc-project/
 │   ├── vpc/         # VPC resources
 │   ├── subnet/      # Subnet resources
 │   └── ec2/         # EC2 instance resources
+
 Skills Demonstrated
 AWS VPC design and networking basics
 
