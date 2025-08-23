@@ -56,20 +56,21 @@ These outputs make it easy to reference and manage deployed resources.
 Install Terraform
 [Terraform Download](https://developer.hashicorp.com/terraform/downloads)
 
-### Configure AWS CLI
-```bash
+Configure AWS CLI
 aws configure
 
-
-Navigate to the project folder and run the following commands:
-
+Initialize Terraform
 terraform init   # Initialize the Terraform project
+
+Plan Terraform Deployment
 terraform plan   # Review the planned resources
+
+Apply Terraform Deployment
 terraform apply  # Apply the infrastructure
 
+Access the EC2 Instance
 
-Access the EC2 instance using the ec2_public_ip output from Terraform.
-
+Use the ec2_public_ip output from Terraform to connect to the instance.
 
 Skills Demonstrated
 
