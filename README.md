@@ -57,15 +57,38 @@ Install Terraform
 [Terraform Download](https://developer.hashicorp.com/terraform/downloads)
 
 ### Configure AWS CLI
-
 ```bash
 aws configure
-
-
-
-
+```
 ### Initialize Terraform
-
 ```bash
 terraform init
+```
+### Plan Terraform Deployment
+```bash
+terraform plan
+```
+### Apply Terraform Deployment
+```bash
+terraform apply
+```
+Access the EC2 Instance
+
+Use the ec2_public_ip output from Terraform to connect to the instance.
+
+Skills Demonstrated
+
+AWS VPC design and networking basics
+
+Subnet planning and routing
+
+Security group configuration
+
+EC2 provisioning
+
+Infrastructure as Code (IaC) using Terraform
+
+Modular Terraform project organization
+
+
 
