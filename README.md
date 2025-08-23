@@ -76,19 +76,20 @@ Access the EC2 Instance
 
 Use the ec2_public_ip output from Terraform to connect to the instance.
 
-Skills Demonstrated
 
-AWS VPC design and networking basics
+# Skills Demonstrated
 
-Subnet planning and routing
+- AWS VPC design and networking basics
 
-Security group configuration
+- Subnet planning and routing
 
-EC2 provisioning
+- Security group configuration
 
-Infrastructure as Code (IaC) using Terraform
+- EC2 provisioning
 
-Modular Terraform project organization
+- Infrastructure as Code (IaC) using Terraform
+
+- Modular Terraform project organization
 
 
 
