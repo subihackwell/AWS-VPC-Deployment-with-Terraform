@@ -59,25 +59,3 @@ Install Terraform
 Configure AWS CLI
 aws configure
 
-Navigate to the project folder and run the following commands:
-terraform init   # Initialize the Terraform project
-terraform plan   # Review the planned resources
-terraform apply  # Apply the infrastructure
-
-Access the EC2 Instance
-
-Use the ec2_public_ip output from Terraform to connect to the instance.
-
-Skills Demonstrated
-
-AWS VPC design and networking basics
-
-Subnet planning and routing
-
-Security group configuration
-
-EC2 provisioning
-
-Infrastructure as Code (IaC) using Terraform
-
-Modular Terraform project organization
