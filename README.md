@@ -32,6 +32,7 @@ The project uses input variables for flexibility:
 
 **Design reasoning:**  
 
+- Initially used t2 micro instance type redirected due to paid tier.
 - Using **variables** allows quick changes to regions, CIDR blocks, and instance types without editing the main code.  
 - Separating **subnets** and **modules** makes it easier to scale the infrastructure, e.g., adding private subnets or more EC2 instances.  
 - The **public subnet** is mapped to auto-assign public IPs so the EC2 instance is reachable from the internet for demonstration purposes.
