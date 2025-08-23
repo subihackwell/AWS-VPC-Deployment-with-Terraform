@@ -13,7 +13,7 @@ The infrastructure created by this project includes:
 - **Security Group** – Controls inbound and outbound traffic; allows SSH (port 22) and HTTP (port 80) for the web server.
 - **EC2 Instance** – Deployed within the public subnet as a web server.
 
-This project is **modularized**, with separate Terraform modules for the VPC, subnet, and EC2 instance, demonstrating best practices in resource organization and reusability.
+This project is **modularized**, with separate Terraform modules for the VPC, subnet, and EC2 instance, causing it to be proficient in resource organization and reusability.
 
 ---
 
