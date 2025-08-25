@@ -76,12 +76,12 @@ Access the EC2 Instance
 
 Use the ec2_public_ip output from Terraform to connect to the instance.
 
-⚡ CI/CD Pipeline 
+#⚡ CI/CD Pipeline 
 
 Automate deployments with GitHub Actions so your infrastructure updates automatically when you push changes.
 
 Example Workflow
-
+```bash
 Create .github/workflows/terraform.yml:
 
 name: Terraform CI/CD
@@ -105,7 +105,7 @@ jobs:
       - run: terraform plan
       - run: terraform apply -auto-approve
         if: github.ref == 'refs/heads/main'
-
+```
 
 Make sure to store AWS credentials securely using GitHub Secrets.
 
