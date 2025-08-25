@@ -39,4 +39,5 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -input=false
+        run: terraform plan -var="web_sg_id=${{ secrets.WEB_SG_ID }}" -input=false
+
