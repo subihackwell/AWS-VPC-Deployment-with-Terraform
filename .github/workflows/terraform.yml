@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs:
   terraform:
@@ -21,13 +21,13 @@ jobs:
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.7.5  
-
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1  
+          aws-region: us-east-1
 
       - name: Terraform Init
         run: terraform init -input=false
@@ -39,5 +39,8 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -var="web_sg_id=${{ secrets.WEB_SG_ID }}" -input=false
+        run: terraform plan -input=false -var="web_sg_id=${{ secrets.WEB_SG_ID }}"
 
+      - name: Terraform Apply
+        if: github.event_name == 'workflow_dispatch'  
+        run: terraform apply -auto-approve -var="web_sg_id=${{ secrets.WEB_SG_ID }}"
