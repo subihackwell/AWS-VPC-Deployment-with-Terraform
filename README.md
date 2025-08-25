@@ -76,7 +76,7 @@ Access the EC2 Instance
 
 Use the ec2_public_ip output from Terraform to connect to the instance.
 
-##⚡CI/CD Pipeline 
+## CI/CD Pipeline 
 
 Automate deployments with GitHub Actions so your infrastructure updates automatically when you push changes.
 
